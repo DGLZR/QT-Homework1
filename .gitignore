@@ -1,0 +1,61 @@
+#-----------------------------------------------------------------------
+# Qt / Qt Creator
+#-----------------------------------------------------------------------
+# Qt Creator 的本地用户配置（含本机路径，不应提交）
+*.pro.user
+*.pro.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+
+# qmake / 构建产物
+Makefile
+Makefile.*
+*.Debug
+*.Release
+.qmake.stash
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.so
+*.dylib
+moc_*.cpp
+moc_*.h
+moc_predefs.h
+qrc_*.cpp
+ui_*.h
+*.qm
+*.qrc.depends
+object_script.*
+build-*/
+debug/
+release/
+bin/
+lib/
+
+# Qt Creator 生成的临时文件
+*.autosave
+*.tmp
+CMakeLists.txt.user*
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+#-----------------------------------------------------------------------
+# 编辑器 / 系统
+#-----------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# 压缩包（提交源码即可，不必提交打包文件）
+*.zip
+*.rar
+*.7z
