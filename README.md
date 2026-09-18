@@ -36,9 +36,9 @@ QtCourse/
 修改作者信息只需改 `qwmainwind.cpp` 顶部三行宏定义：
 
 ```cpp
-#define APP_AUTHOR_NAME     QStringLiteral("刘文果")        // 姓名
-#define APP_AUTHOR_ID       QStringLiteral("20230000000")   // 学号
-#define APP_AUTHOR_CLASS    QStringLiteral("计算机科学与技术") // 班级（可选）
+#define APP_AUTHOR_NAME     QStringLiteral("梁展榕")        // 姓名
+#define APP_AUTHOR_ID       QStringLiteral("2023423330214")   // 学号
+#define APP_AUTHOR_CLASS    QStringLiteral("24软卓1班") // 班级（可选）
 ```
 
 ## 构建与运行

@@ -14,9 +14,9 @@
 
 //==================== 实验1 任务1：关于窗口中的作者信息 ====================
 // 只需修改下面两行，即可把"关于"窗口里的姓名、学号换成自己的信息
-#define APP_AUTHOR_NAME     QStringLiteral("刘文果")        // 姓名
-#define APP_AUTHOR_ID       QStringLiteral("20230000000")   // 学号
-#define APP_AUTHOR_CLASS    QStringLiteral("计算机科学与技术") // 班级（可选）
+#define APP_AUTHOR_NAME     QStringLiteral("梁展榕")        // 姓名
+#define APP_AUTHOR_ID       QStringLiteral("2023423330214")   // 学号
+#define APP_AUTHOR_CLASS    QStringLiteral("24软卓1班") // 班级（可选）
 //==========================================================================
 
 
@@ -189,14 +189,14 @@ void QWMainWind::on_actFontUnder_triggered(bool checked)
 }
 
 //实验1 任务1：点击工具栏上的"关于"按钮（或"帮助"菜单里的"关于"），弹出关于窗口
+//  姓名 / 学号 / 班级 在 qwmainwind.cpp 顶部的宏定义里统一修改
 void QWMainWind::on_actAbout_triggered()
 {
     QMessageBox::about(this, tr("关于"),
-        tr("<h3>Qt 课程实验 1</h3>"
-           "<p>开发人员信息：%1</p>"
-           "<p>学号：%2</p>"
-           "<p>班级：%3</p>"
-           "<p>Qt 版本：%4</p>")
+        QStringLiteral("开发人员信息：%1\n"
+                       "学号：%2\n"
+                       "班级：%3\n"
+                       "开发工具：Qt %4")
             .arg(APP_AUTHOR_NAME)
             .arg(APP_AUTHOR_ID)
             .arg(APP_AUTHOR_CLASS)
