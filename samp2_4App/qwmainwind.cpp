@@ -12,12 +12,10 @@
 #include    <QMenuBar>
 #include    <QMenu>
 
-//==================== 实验1 任务1：关于窗口中的作者信息 ====================
-// 只需修改下面两行，即可把"关于"窗口里的姓名、学号换成自己的信息
-#define APP_AUTHOR_NAME     QStringLiteral("梁展榕")        // 姓名
-#define APP_AUTHOR_ID       QStringLiteral("2023423330214")   // 学号
-#define APP_AUTHOR_CLASS    QStringLiteral("24软卓1班") // 班级（可选）
-//==========================================================================
+//关于窗口中显示的作者信息
+#define APP_AUTHOR_NAME     QStringLiteral("梁展榕")
+#define APP_AUTHOR_ID       QStringLiteral("2023423330214")
+#define APP_AUTHOR_CLASS    QStringLiteral("24软卓1班")
 
 
 void QWMainWind::updateCurFile(QString aFile)
@@ -28,7 +26,7 @@ void QWMainWind::updateCurFile(QString aFile)
 
 void QWMainWind::iniUI()
 {
-//实验1 任务1：在菜单栏上增加"帮助"菜单，其中放入"关于"Action
+//菜单栏上增加"帮助"菜单，把"关于"Action放进去
     QMenu *helpMenu = menuBar()->addMenu(QStringLiteral("帮助"));
     helpMenu->addAction(ui->actAbout);
 
@@ -188,8 +186,7 @@ void QWMainWind::on_actFontUnder_triggered(bool checked)
     ui->txtEdit->mergeCurrentCharFormat(fmt);
 }
 
-//实验1 任务1：点击工具栏上的"关于"按钮（或"帮助"菜单里的"关于"），弹出关于窗口
-//  姓名 / 学号 / 班级 在 qwmainwind.cpp 顶部的宏定义里统一修改
+//点击工具栏上的"关于"按钮（或"帮助"菜单里的"关于"）弹出关于窗口
 void QWMainWind::on_actAbout_triggered()
 {
     QMessageBox::about(this, tr("关于"),
